@@ -25,8 +25,19 @@ def save_songs(songs):
 
 @app.route("/")
 def index():
-    songs = load_songs()
-    return render_template("index.html", songs=songs)
+    return render_template("index.html")
+
+
+@app.route("/music/acoustic")
+def acustic():
+    songs = [song for song in load_songs() if "acoustic" in song["tags"]]
+    return render_template("acoustic.html", songs=songs)
+
+
+@app.route("/music/band")
+def band():
+    songs = [song for song in load_songs() if "band" in song["tags"]]
+    return render_template("band.html", songs=songs)
 
 
 @app.route("/upload", methods=["GET", "POST"])

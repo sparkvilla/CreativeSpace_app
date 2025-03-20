@@ -1,7 +1,7 @@
 import os
 from PIL import Image, ImageOps
 
-image_path = "/home/diego/Downloads/MrMorning.jpg"
+image_path = "/home/diego/Downloads/band.jpg"
 
 # Open and process the image
 with Image.open(image_path) as img:
@@ -10,7 +10,7 @@ with Image.open(image_path) as img:
     img = ImageOps.fit(img, (min_side, min_side), Image.LANCZOS)  # Crop to square
 
     # Resize to desired size (300x300)
-    img = img.resize((300, 300), Image.LANCZOS)
+    img = img.resize((350, 350), Image.LANCZOS)
 
     # Save the final image
     img.save(image_path)

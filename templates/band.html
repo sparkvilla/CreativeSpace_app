@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h1 class="text-center my-4">Lemon's King</h1>
+    <div class="row">
+        {% for song in songs %}
+        <div class="col-md-4 d-flex align-items-stretch">
+            <div class="card h-100 d-flex flex-column">
+                <img src="{{ url_for('static', filename='uploads/' + song.image) }}" class="card-img-top"
+                    alt="{{ song.title }}" style="height: 200px; object-fit: cover;">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">{{ song.title }}</h5>
+                    <p class="card-text">People: {{ song.participants | join(', ') }}</p>
+                    <audio controls class="w-100 mt-auto">
+                        <source src="{{ url_for('static', filename='uploads/' + song.audio) }}" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
