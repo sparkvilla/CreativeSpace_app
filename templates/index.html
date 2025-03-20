@@ -4,23 +4,29 @@
 
 {% block content %}
 <div class="row text-center mt-4">
-    <div class="col-md-4">
-        <a href="/blog">
-            <img src="{{ url_for('static', filename='nature.jpg') }}" class="category-image" alt="Blog">
+    <div class="col-md-4" class="category-link">
+        <div class="category-container">
+            <a href="/blog">
+                <img src="{{ url_for('static', filename='nature.jpg') }}" class="category-image" alt="Blog">
+                <div class="overlay-text">Blog</div>
+        </div>
         </a>
-        <h3>Blog</h3>
     </div>
-    <div class="col-md-4">
-        <a href="/music/acoustic">
-            <img src="{{ url_for('static', filename='acoustic.jpg') }}" class="category-image" alt="Acoustic">
+    <div class="col-md-4" class="category-link">
+        <div class="category-container">
+            <a href="/music/acoustic">
+                <img src="{{ url_for('static', filename='acoustic.jpg') }}" class="category-image" alt="Acoustic">
+                <div class="overlay-text">Acoustic</div>
+        </div>
         </a>
-        <h3>Acoustic</h3>
     </div>
-    <div class="col-md-4">
-        <a href="/music/band">
-            <img src="{{ url_for('static', filename='band.jpg') }}" class="category-image" alt="Band">
+    <div class="col-md-4" class="category-link">
+        <div class="category-container">
+            <a href=" /music/band">
+                <img src="{{ url_for('static', filename='band.jpg') }}" class="category-image" alt="Band">
+                <div class="overlay-text">Band</div>
+        </div>
         </a>
-        <h3>Band</h3>
     </div>
 </div>
 {% endblock %}

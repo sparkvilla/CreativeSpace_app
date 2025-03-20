@@ -2,12 +2,19 @@ import json
 import os
 from flask import Flask, render_template, request, redirect, url_for
 from PIL import Image, ImageOps
+from datetime import datetime
+
 
 app = Flask(__name__)
 UPLOAD_FOLDER = "static/uploads"
 SONGS_FILE = "data/projects.json"
 BLOGS_FILE = "data/blogs.json"
 app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
+
+
+@app.context_processor
+def inject_year():
+    return {"current_year": datetime.now().year}
 
 
 # Function to load songs from JSON

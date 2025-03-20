@@ -10,35 +10,45 @@
 </head>
 
 <body class="container mt-5">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="/">Home</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="/music/acoustic">Acoustic</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/music/band">Band</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                </ul>
+    <div class="page-background">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="/">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="/music/acoustic">Acoustic</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/music/band">Band</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container mt-4">
+            <div class="image-wrapper">
+                <img src="{{ url_for('static', filename='studio.JPG') }}" class="header-image rounded mb-4"
+                    alt="Music Image">
+                <div class="text-overlay">Creative Space</div>
             </div>
         </div>
-    </nav>
 
-    <div class="container mt-4">
-        <div class="image-wrapper">
-            <img src="{{ url_for('static', filename='studio.JPG') }}" class="header-image rounded mb-4"
-                alt="Music Image">
-            <div class="text-overlay">Creative Space</div>
+        <div class="container">
+            {% block content %}{% endblock %}
         </div>
     </div>
-
-    <div class="container">
-        {% block content %}{% endblock %}
+</body>
+<footer class="footer mt-4">
+    <div class="container text-center">
+        <p>Contact: your.email@example.com | GitHub: <a href="https://github.com/yourusername"
+                target="_blank">yourusername</a></p>
+        <p>&copy; {{ current_year }} Your Name. All rights reserved.</p>
     </div>
+</footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

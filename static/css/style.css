@@ -1,3 +1,13 @@
+/* Light background for the entire page */
+.page-background {
+    background-color: #fec20c;
+    /* Light green */
+    min-height: 100vh;
+    /* Ensure full height */
+    padding: 30px 0;
+    /* Some spacing around */
+}
+
 .header-image {
     width: 100%;
     /* Adjust width */
@@ -15,6 +25,18 @@
     width: 100%;
 }
 
+.category-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.category-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
 .text-overlay {
     position: absolute;
     bottom: 0;
@@ -25,4 +47,37 @@
     font-size: 24px;
     font-weight: bold;
     padding: 10px 0;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black */
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+.footer {
+    background: #333;
+    color: white;
+    padding: 15px 0;
+    position: relative;
+    width: 100%;
+}
+
+.footer a {
+    color: #f8b400;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
