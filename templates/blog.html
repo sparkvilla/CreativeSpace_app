@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center">Blog</h1>
+    <div class="list-group mt-4">
+        {% for blog in blogs %}
+        <div class="list-group-item">
+            <h5 class="mb-1">{{ blog.title }}</h5>
+            <small class="text-muted">Tags: {{ ", ".join(blog.tags) }}</small>
+            <p class="collapse mt-2" id="blog{{ loop.index }}">{{ blog.content }}</p>
+            <button class="btn btn-primary btn-sm mt-2" data-bs-toggle="collapse"
+                data-bs-target="#blog{{ loop.index }}">
+                Read More
+            </button>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

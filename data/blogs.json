@@ -1,0 +1,13 @@
+[
+    {
+        "id": 1,
+        "title": "Exploring Acoustic Sounds",
+        "content": "This is the blog content...",
+        "tags": [
+            "music",
+            "acoustic"
+        ],
+        "author": "Diego",
+        "date": "2025-03-14"
+    }
+]

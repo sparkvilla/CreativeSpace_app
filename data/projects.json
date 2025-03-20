@@ -11,8 +11,8 @@
             "duo"
         ],
         "participants": [
-            "Diego Villamaina",
-            "Anita Ritt"
+            "Diego",
+            "Anita"
         ]
     },
     {
@@ -27,8 +27,8 @@
             "duo"
         ],
         "participants": [
-            "Diego Villamaina",
-            "Anita Ritt"
+            "Diego",
+            "Anita"
         ]
     },
     {
@@ -42,7 +42,23 @@
             "acoustic"
         ],
         "participants": [
-            "Diego Villamaina"
+            "Diego"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "We Got Soul",
+        "name": "WeGotSoul_2025-02-28",
+        "image": "WeGotSoul.jpg",
+        "audio": "WeGotSoul_2025-02-28.m4a",
+        "lyrics": "some lyrics",
+        "tags": [
+            "band"
+        ],
+        "participants": [
+            "Diego",
+            "Alessandro",
+            "Daniela"
         ]
     }
 ]

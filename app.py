@@ -6,6 +6,7 @@ from PIL import Image, ImageOps
 app = Flask(__name__)
 UPLOAD_FOLDER = "static/uploads"
 SONGS_FILE = "data/projects.json"
+BLOGS_FILE = "data/blogs.json"
 app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
 
 
@@ -23,6 +24,14 @@ def save_songs(songs):
         json.dump(songs, f, indent=4)
 
 
+# Function to load blogs from JSON
+def load_blogs():
+    if os.path.exists(BLOGS_FILE):
+        with open(BLOGS_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return []
+
+
 @app.route("/")
 def index():
     return render_template("index.html")
@@ -38,6 +47,12 @@ def acustic():
 def band():
     songs = [song for song in load_songs() if "band" in song["tags"]]
     return render_template("band.html", songs=songs)
+
+
+@app.route("/blog")
+def blog():
+    blogs = load_blogs()
+    return render_template("blog.html", blogs=blogs)
 
 
 @app.route("/upload", methods=["GET", "POST"])
