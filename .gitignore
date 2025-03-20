@@ -1,0 +1,8 @@
+# Ignore all uploaded files in static/uploads
+static/uploads/
+
+# Ignore specific audio file types
+*.mp3
+*.wav
+*.ogg
+*.flac
