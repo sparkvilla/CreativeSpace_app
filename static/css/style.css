@@ -1,0 +1,28 @@
+.header-image {
+    width: 100%;
+    /* Adjust width */
+    max-height: 400px;
+    /* Set a max height */
+    object-fit: cover;
+    /* Ensures good cropping */
+    display: block;
+    margin: 0 auto;
+    /* Centers image */
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 0;
+}

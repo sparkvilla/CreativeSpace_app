@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Music</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="/">Home</a>
+        <a href="/music">Music</a>
+        <a href="/about">About</a>
+    </nav>
+
+    <form action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+        <label for="song_title">Song Title:</label>
+        <input type="text" id="song_title" name="song_title" required>
+
+        <label for="song_file">Upload Audio:</label>
+        <input type="file" id="song_file" name="song_file" accept="audio/*" required>
+
+        <label for="song_image">Upload Image:</label>
+        <input type="file" id="song_image" name="song_image" accept="image/*">
+
+        <label for="song_lyrics">Lyrics:</label>
+        <textarea id="song_lyrics" name="song_lyrics"></textarea>
+
+        <label for="tags">Tags (comma-separated):</label>
+        <input type="text" id="tags" name="tags">
+
+        <label for="participants">Participants (comma-separated):</label>
+        <input type="text" id="participants" name="participants">
+
+        <button type="submit">Upload Song</button>
+    </form>
+</body>
+
+</html>

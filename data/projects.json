@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "title": "Cold No More (acustic)",
+        "name": "ColdNoMore_acustic_2_voices",
+        "image": "ColdNoMore.jpg",
+        "audio": "ColdNoMore_2voices_001.wav",
+        "lyrics": "",
+        "tags": [
+            "acustic",
+            "duo"
+        ],
+        "participants": [
+            "Diego Villamaina",
+            "Anita Ritt"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "We Got Soul (acustic)",
+        "name": "WeGotSoul_Acustic_2Voices",
+        "image": "WeGotSoul.jpg",
+        "audio": "WeGotSoul_Acustic_2Voices.wav",
+        "lyrics": "some lyrics",
+        "tags": [
+            "acustic duo"
+        ],
+        "participants": [
+            "Diego Anita"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Mr Morning (acustic)",
+        "name": "MrMorning_Acustic (1)",
+        "image": "MrMorning.jpg",
+        "audio": "MrMorning_Acustic (1).wav",
+        "lyrics": "some lyrics",
+        "tags": [
+            "Acustic"
+        ],
+        "participants": [
+            "Diego"
+        ]
+    }
+]
