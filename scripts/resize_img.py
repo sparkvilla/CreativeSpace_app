@@ -1,7 +1,7 @@
 import os
 from PIL import Image, ImageOps
 
-image_path = "/home/diego/Downloads/IMG-20250309-WA0070.jpg"
+image_path = "/home/diego/dev/github/mymusic_app/static/uploads/ItsNotGood.jpg"
 
 # Open and process the image
 with Image.open(image_path) as img:

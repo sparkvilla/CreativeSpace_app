@@ -2,9 +2,9 @@
     {
         "id": 1,
         "title": "Cold No More",
-        "name": "ColdNoMore_acustic_2_voices",
+        "name": "ColdNoMore_Acoustic_2voices",
         "image": "ColdNoMore.jpg",
-        "audio": "ColdNoMore_2voices_001.wav",
+        "audio": "ColdNoMore_Acoustic_2Voices.wav",
         "lyrics": "",
         "tags": [
             "acoustic",
@@ -59,6 +59,20 @@
             "Diego",
             "Alessandro",
             "Daniela"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Its Not Good",
+        "name": "WeGotSoul_2025-03-24",
+        "image": "ItsNotGood.jpg",
+        "audio": "ItsNotGood_Acoustic_24032025.wav",
+        "lyrics": "some lyrics",
+        "tags": [
+            "acoustic"
+        ],
+        "participants": [
+            "Diego"
         ]
     }
 ]
