@@ -14,7 +14,7 @@
                     <p class="card-text">People: {{ song.participants | join(', ') }}</p>
                     <audio controls class="w-100 mt-auto">
                         {% if song.audio.startswith('http') %}
-                        <source src="{{ song.audio }}" type="audio/mpeg">
+                        <source src="{{ song.audio }}" type="audio/wav">
                         {% else %}
                         <source src="{{ url_for('static', filename='uploads/' + song.audio) }}" type="audio/mpeg">
                         {% endif %}

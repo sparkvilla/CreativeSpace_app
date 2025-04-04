@@ -1,12 +1,12 @@
 # Ignore all uploaded files in static/uploads
-static/uploads/
-!static/uploads/*.jpg
-!static/uploads/*.png
-!static/uploads/*.jpeg
-!static/uploads/*.gif
+#static/uploads/
+#!static/uploads/*.jpg
+#!static/uploads/*.png
+#!static/uploads/*.jpeg
+#!static/uploads/*.gif
 
 # Ignore specific audio file types
-*.mp3
-*.wav
-*.ogg
-*.flac
+#*.mp3
+#*.wav
+#*.ogg
+#*.flac
